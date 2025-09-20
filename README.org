@@ -74,6 +74,20 @@ If you use Doom Emacs, add the followings to ~packages.el~ and ~config.el~ respe
   (use-package! anki-editor)
 #+end_src
 
+*** With Spacemacs
+
+If you use Spacemacs, add the followings to ~init.el~.
+#+begin_src emacs-lisp
+(defun dotspacemacs/layers ()
+   dotspacemacs-additional-packages '(
+                                      (anki-editor
+                                       :location (recipe
+                                                  :fetcher github
+                                                  :repo "anki-editor/anki-editor"))
+                                      )
+#+end_src
+
+
 ** Usage
 
 *** The Layout of Notes
