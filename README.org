@@ -79,12 +79,15 @@ If you use Doom Emacs, add the followings to ~packages.el~ and ~config.el~ respe
 If you use Spacemacs, add the followings to ~init.el~.
 #+begin_src emacs-lisp
 (defun dotspacemacs/layers ()
-   dotspacemacs-additional-packages '(
-                                      (anki-editor
+  "Configuration Layers declaration..."
+  (setq-default
+   ;; ...
+   dotspacemacs-additional-packages '((anki-editor
                                        :location (recipe
                                                   :fetcher github
-                                                  :repo "anki-editor/anki-editor"))
-                                      )
+                                                  :repo "anki-editor/anki-editor")))
+   ;; ...
+   ))
 #+end_src
 
 
